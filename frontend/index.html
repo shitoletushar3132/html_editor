@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      textarea {
+        display: block;
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+        margin: 20px;
+        width: 80%;
+      }
+      label {
+        font-weight: bolder;
+        font-size: 30px;
+        color: indianred;
+      }
+      button{
+        background-color: #1ca350;
+        cursor: pointer;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://localhost:5050/editor" method="post">
+      <label for="code">Editor</label>
+      <textarea
+        name="code"
+        id="code"
+        cols="80"
+        rows="40"
+        placeholder="Write a html code"
+      >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+      </textarea>
+      <button>view the page</button>
+    </form>
+  </body>
+</html>
